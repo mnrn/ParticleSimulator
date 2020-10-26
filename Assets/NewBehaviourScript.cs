@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Runtime.InteropServices;
 using UnityEngine;
 
+// パーティクル構造体 (こちらを頂点シェーダーとコンピュートシェーダーに渡します。)
 struct Particle
 {
     public Vector3 pos;
@@ -17,17 +18,27 @@ struct Particle
 
 public class NewBehaviourScript : MonoBehaviour
 {
+    // 描画用シェーダー
     [SerializeField] private Shader shader = default;
+    // コンピュートシェーダー
     [SerializeField] private ComputeShader cs = default;
 
+    // x軸方向のパーティクルの数 (コードではランダムに任せて実際の数値とは違います。ランダムに任せない場合使用してください。)
     [SerializeField] private int partNumX = default;
+    // y軸方向のパーティクルの数 (コードではランダムに任せて実際の数値とは違います。ランダムに任せない場合使用してください。)
     [SerializeField] private int partNumY = default;
+    // z軸方向のパーティクルの数 (コードではランダムに任せて実際の数値とは違います。ランダムに任せない場合使用してください。)
     [SerializeField] private int partNumZ = default;
+    // GPUのx軸方向の分割数
     private const int LOCAL_SZ_X = 1024;
 
+    // マテリアル
     private Material mat = default;
+    // GPUに転送するバッファ
     private ComputeBuffer partBuf = default;
+    // 今回使用するコンピュートシェーダのカーネル (ひとつだけです。)
     private int kerIdx;
+    // パーティクルの総数
     private int partNum;
 
     // Start is called before the first frame update
@@ -35,6 +46,7 @@ public class NewBehaviourScript : MonoBehaviour
     {
         mat = new Material(shader);
 
+        // パーティクルの初期位置を決定します。
         partNum = partNumX * partNumY * partNumZ;
         partBuf = new ComputeBuffer(partNum, Marshal.SizeOf(typeof(Particle)));
         Particle[] ps = new Particle[partNum];
@@ -54,6 +66,7 @@ public class NewBehaviourScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // コンピュートシェーダーの実行
         cs.SetBuffer(kerIdx, "ps", partBuf);
         cs.Dispatch(kerIdx, partNum / LOCAL_SZ_X, 1, 1);
     }
