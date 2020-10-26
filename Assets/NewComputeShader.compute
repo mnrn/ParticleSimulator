@@ -1,9 +1,14 @@
 ﻿// Each #kernel tells which function to compile; you can have many kernels
 #pragma kernel CSMain
 
-RWStructuredBuffer<float3> _Position;
+struct Particle
+{
+    float3 pos;
+};
 
-[numthreads(1,1,1)]
+RWStructuredBuffer<Particle> Particles;
+
+[numthreads(2,1,1)]
 void CSMain (uint id : SV_DispatchThreadID)
 {
 

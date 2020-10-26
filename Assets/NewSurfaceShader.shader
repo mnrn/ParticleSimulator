@@ -14,7 +14,12 @@
             #pragma fragment frag
             #include "UnityCG.cginc"
 
-            StructuredBuffer<float3> pos;
+            struct Particle
+            {
+                float3 pos;
+            };
+
+            StructuredBuffer<Particle> particles;
 
             struct v2f
             {
@@ -25,8 +30,8 @@
             v2f vert(uint id: SV_VertexID)
             {
                 v2f output;
-                output.pos = float4(pos[id], 1.0);
-                output.sz = 100.0;
+                output.pos = float4(particles[id].pos, 1.0);
+                output.sz = 10.0;
                 return output;
             }
 
