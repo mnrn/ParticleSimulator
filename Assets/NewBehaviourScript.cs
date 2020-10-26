@@ -31,7 +31,7 @@ public class NewBehaviourScript : MonoBehaviour
         Particle[] ps = new Particle[partNum];
         for (int i = 0; i < partNum; i++)
         {
-            ps[i] = new Particle(new Vector3(Random.Range(-10.0f, 10.0f), Random.Range(-10.0f, 10.0f), Random.Range(-10.0f, 10.0f)));
+            ps[i] = new Particle(new Vector3(Random.Range(-5.0f, 5.0f), Random.Range(-5.0f, 5.0f), Random.Range(-5.0f, 5.0f)));
         }
         partBuf.SetData(ps);
 
