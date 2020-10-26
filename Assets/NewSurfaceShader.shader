@@ -2,7 +2,8 @@
 {
     SubShader
     {
-        ZWrite On
+        ZWrite Off
+        Blend One One
 
         Pass 
         {            

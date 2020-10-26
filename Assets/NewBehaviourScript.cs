@@ -17,7 +17,7 @@ public class NewBehaviourScript : MonoBehaviour
 {
     [SerializeField] private Shader shader = default;
     [SerializeField] private ComputeShader cs = default;
-    private int partNum = 100;
+    [SerializeField ]private int partNum = default;
     private Material mat = default;
     private ComputeBuffer partBuf;
     private int kerIdx;
