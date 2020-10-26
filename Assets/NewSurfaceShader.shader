@@ -18,9 +18,10 @@
             struct Particle
             {
                 float3 pos;
+                float3 vel;
             };
 
-            StructuredBuffer<Particle> particles;
+            StructuredBuffer<Particle> ps;
 
             struct v2f
             {
@@ -31,9 +32,9 @@
             v2f vert(uint id: SV_VertexID)
             {
                 v2f output;
-                output.pos = float4(particles[id].pos, 1.0);
+                output.pos = float4(ps[id].pos, 1.0);
                 output.pos = mul (UNITY_MATRIX_VP, output.pos);
-                output.sz = 5.0;
+                output.sz = 2.0;
                 return output;
             }
 

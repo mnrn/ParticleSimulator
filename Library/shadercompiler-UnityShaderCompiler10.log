@@ -1,2 +1,15 @@
 Base path: '/Applications/Unity/Hub/Editor/2019.4.9f1/Unity.app/Contents', plugins path '/Applications/Unity/Hub/Editor/2019.4.9f1/PlaybackEngines'
 Cmd: initializeCompiler
+Cmd: compileComputeKernel
+  error: 1 plat 14 at NewComputeShader.compute(32): implicit truncation of vector type
+  api=14 insize=828 outsize=1465 ok=1
+Cmd: translateComputeKernel
+  api=14 insize=1465 outsize=2476 ok=1
+Cmd: translateComputeKernel
+  api=14 insize=1413 outsize=2362 ok=1
+Cmd: compileComputeKernel
+  api=14 insize=1031 outsize=1617 ok=1
+Cmd: translateComputeKernel
+  api=14 insize=1617 outsize=2743 ok=1
+Cmd: translateComputeKernel
+  api=14 insize=1617 outsize=2752 ok=1

@@ -267,3 +267,303 @@ Cmd: compileSnippet
   api=14 type=0 insize=1319 outsize=1398 kw= pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR ok=1
 Cmd: compileSnippet
   api=14 type=1 insize=1319 outsize=565 kw= pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR ok=1
+Cmd: preprocess
+  insize=1115 outsize=203 ok=1
+Cmd: compileSnippet
+  api=14 type=0 insize=1347 outsize=1398 kw= pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR ok=1
+Cmd: compileSnippet
+  api=14 type=1 insize=1347 outsize=565 kw= pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR ok=1
+Cmd: preprocessCompute
+  insize=267 outsize=266 ok=1
+Cmd: compileComputeKernel
+  api=14 insize=266 outsize=495 ok=1
+Cmd: preprocessCompute
+  insize=264 outsize=263 ok=1
+Cmd: compileComputeKernel
+  api=14 insize=263 outsize=495 ok=1
+Cmd: preprocess
+  insize=1101 outsize=204 ok=1
+Cmd: compileSnippet
+  api=14 type=0 insize=1333 outsize=1356 kw= pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR ok=1
+Cmd: compileSnippet
+  api=14 type=1 insize=1333 outsize=565 kw= pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR ok=1
+Cmd: preprocessCompute
+  insize=289 outsize=288 ok=1
+Cmd: compileComputeKernel
+  error: 2 plat 14 at NewComputeShader.compute(15): incorrect number of arguments to numeric-type constructor
+  api=14 insize=288 outsize=0 ok=0
+Cmd: preprocessCompute
+  insize=299 outsize=298 ok=1
+Cmd: compileComputeKernel
+  api=14 insize=298 outsize=817 ok=1
+Cmd: preprocessCompute
+  insize=260 outsize=259 ok=1
+Cmd: compileComputeKernel
+  api=14 insize=259 outsize=495 ok=1
+Cmd: translateComputeKernel
+  api=14 insize=495 outsize=309 ok=1
+Cmd: preprocessCompute
+  insize=1105 outsize=1104 ok=1
+Cmd: compileComputeKernel
+  error: 2 plat 14 at NewComputeShader.compute(37): cannot implicitly convert from 'const float3' to 'struct Particle'
+  api=14 insize=1104 outsize=0 ok=0
+Cmd: preprocessCompute
+  insize=1109 outsize=1108 ok=1
+Cmd: compileComputeKernel
+  api=14 insize=1108 outsize=2452 ok=1
+Cmd: translateComputeKernel
+  api=14 insize=2452 outsize=3432 ok=1
+Cmd: preprocessCompute
+  insize=1113 outsize=1112 ok=1
+Cmd: preprocessCompute
+  insize=1111 outsize=1110 ok=1
+Cmd: compileComputeKernel
+  api=14 insize=1110 outsize=2240 ok=1
+Cmd: translateComputeKernel
+  api=14 insize=2240 outsize=2764 ok=1
+Cmd: preprocessCompute
+  insize=1113 outsize=1112 ok=1
+Cmd: compileComputeKernel
+  api=14 insize=1112 outsize=2236 ok=1
+Cmd: translateComputeKernel
+  api=14 insize=2236 outsize=2764 ok=1
+Cmd: preprocessCompute
+  insize=1115 outsize=1114 ok=1
+Cmd: compileComputeKernel
+  api=14 insize=1114 outsize=2188 ok=1
+Cmd: translateComputeKernel
+  api=14 insize=2188 outsize=2567 ok=1
+Cmd: preprocessCompute
+  insize=1117 outsize=1116 ok=1
+Cmd: compileComputeKernel
+  api=14 insize=1116 outsize=495 ok=1
+Cmd: translateComputeKernel
+  api=14 insize=495 outsize=309 ok=1
+Cmd: preprocessCompute
+  insize=1113 outsize=1112 ok=1
+Cmd: compileComputeKernel
+  api=14 insize=1112 outsize=2448 ok=1
+Cmd: translateComputeKernel
+  api=14 insize=2448 outsize=3432 ok=1
+Cmd: preprocessCompute
+  insize=1119 outsize=1118 ok=1
+Cmd: compileComputeKernel
+  api=14 insize=1118 outsize=495 ok=1
+Cmd: preprocessCompute
+  insize=260 outsize=259 ok=1
+Cmd: preprocessCompute
+  insize=309 outsize=308 ok=1
+Cmd: compileComputeKernel
+  error: 2 plat 14 at NewComputeShader.compute(16): undeclared identifier 'rand'
+  api=14 insize=308 outsize=0 ok=0
+Cmd: preprocessCompute
+  insize=716 outsize=715 ok=1
+Cmd: compileComputeKernel
+  error: 2 plat 14 at NewComputeShader.compute(26): syntax error: unexpected token 'uint'
+  error: 2 plat 14 at NewComputeShader.compute(27): 'wang_hash': no matching 1 parameter function
+  error: 2 plat 14 at NewComputeShader.compute(27): undeclared identifier 'r1'
+  api=14 insize=715 outsize=0 ok=0
+Cmd: preprocessCompute
+  insize=716 outsize=715 ok=1
+Cmd: compileComputeKernel
+  api=14 insize=715 outsize=1729 ok=1
+Cmd: translateComputeKernel
+  api=14 insize=1729 outsize=2076 ok=1
+Cmd: preprocessCompute
+  insize=319 outsize=318 ok=1
+Cmd: preprocessCompute
+  insize=318 outsize=317 ok=1
+Cmd: compileComputeKernel
+  api=14 insize=317 outsize=881 ok=1
+Cmd: translateComputeKernel
+  api=14 insize=881 outsize=660 ok=1
+Cmd: preprocessCompute
+  insize=317 outsize=316 ok=1
+Cmd: compileComputeKernel
+  api=14 insize=316 outsize=881 ok=1
+Cmd: translateComputeKernel
+  api=14 insize=881 outsize=660 ok=1
+Cmd: preprocessCompute
+  insize=489 outsize=488 ok=1
+Cmd: compileComputeKernel
+  error: 2 plat 14 at NewComputeShader.compute(18): array, matrix, vector, or indexable object type expected in index expression
+  api=14 insize=488 outsize=0 ok=0
+Cmd: preprocessCompute
+  insize=490 outsize=489 ok=1
+Cmd: preprocessCompute
+  insize=499 outsize=498 ok=1
+Cmd: compileComputeKernel
+  error: 2 plat 14 at NewComputeShader.compute(18): invalid subscript 'pos'
+  api=14 insize=498 outsize=0 ok=0
+Cmd: preprocessCompute
+  insize=497 outsize=496 ok=1
+Cmd: compileComputeKernel
+  error: 2 plat 14 at NewComputeShader.compute(19): 'length': no matching 1 parameter intrinsic function; Possible intrinsic functions are: length(floatM|halfM|min10floatM|min16floatM)
+  error: 2 plat 14 at NewComputeShader.compute(19): undeclared identifier 'pos'
+  api=14 insize=496 outsize=0 ok=0
+Cmd: preprocessCompute
+  insize=495 outsize=494 ok=1
+Cmd: compileComputeKernel
+  api=14 insize=494 outsize=1041 ok=1
+Cmd: preprocessCompute
+  insize=494 outsize=493 ok=1
+Cmd: compileComputeKernel
+  api=14 insize=493 outsize=1041 ok=1
+Cmd: preprocessCompute
+  insize=494 outsize=493 ok=1
+Cmd: compileComputeKernel
+  api=14 insize=493 outsize=1041 ok=1
+Cmd: translateComputeKernel
+  api=14 insize=1041 outsize=1117 ok=1
+Cmd: preprocessCompute
+  insize=566 outsize=565 ok=1
+Cmd: compileComputeKernel
+  api=14 insize=565 outsize=1161 ok=1
+Cmd: translateComputeKernel
+  api=14 insize=1161 outsize=1870 ok=1
+Cmd: preprocessCompute
+  insize=601 outsize=600 ok=1
+Cmd: preprocessCompute
+  insize=735 outsize=734 ok=1
+Cmd: compileComputeKernel
+  error: 2 plat 14 at NewComputeShader.compute(24): unrecognized identifier 'd'
+  api=14 insize=734 outsize=0 ok=0
+Cmd: preprocessCompute
+  insize=754 outsize=753 ok=1
+Cmd: compileComputeKernel
+  error: 1 plat 14 at NewComputeShader.compute(26): implicit truncation of vector type
+  api=14 insize=753 outsize=1161 ok=1
+Cmd: translateComputeKernel
+  api=14 insize=1161 outsize=1870 ok=1
+Cmd: preprocessCompute
+  insize=788 outsize=787 ok=1
+Cmd: compileComputeKernel
+  error: 1 plat 14 at NewComputeShader.compute(26): implicit truncation of vector type
+  api=14 insize=787 outsize=1201 ok=1
+Cmd: translateComputeKernel
+  api=14 insize=1201 outsize=1962 ok=1
+Cmd: preprocessCompute
+  insize=773 outsize=772 ok=1
+Cmd: preprocessCompute
+  insize=789 outsize=788 ok=1
+Cmd: compileComputeKernel
+  api=14 insize=788 outsize=1201 ok=1
+Cmd: preprocessCompute
+  insize=833 outsize=832 ok=1
+Cmd: compileComputeKernel
+  api=14 insize=832 outsize=1253 ok=1
+Cmd: translateComputeKernel
+  api=14 insize=1253 outsize=2099 ok=1
+Cmd: preprocessCompute
+  insize=829 outsize=828 ok=1
+Cmd: preprocessCompute
+  insize=830 outsize=829 ok=1
+Cmd: compileComputeKernel
+  api=14 insize=829 outsize=1465 ok=1
+Cmd: translateComputeKernel
+  api=14 insize=1465 outsize=2493 ok=1
+Cmd: preprocessCompute
+  insize=860 outsize=859 ok=1
+Cmd: preprocessCompute
+  insize=816 outsize=815 ok=1
+Cmd: preprocessCompute
+  insize=777 outsize=776 ok=1
+Cmd: compileComputeKernel
+  api=14 insize=776 outsize=1948 ok=1
+Cmd: translateComputeKernel
+  api=14 insize=1948 outsize=2755 ok=1
+Cmd: preprocessCompute
+  insize=800 outsize=799 ok=1
+Cmd: compileComputeKernel
+  api=14 insize=799 outsize=1767 ok=1
+Cmd: preprocessCompute
+  insize=817 outsize=816 ok=1
+Cmd: compileComputeKernel
+  api=14 insize=816 outsize=1413 ok=1
+Cmd: preprocessCompute
+  insize=891 outsize=890 ok=1
+Cmd: compileComputeKernel
+  error: 2 plat 14 at NewComputeShader.compute(16): undeclared identifier 'normalized'
+  api=14 insize=890 outsize=0 ok=0
+Cmd: preprocessCompute
+  insize=890 outsize=889 ok=1
+Cmd: compileComputeKernel
+  api=14 insize=889 outsize=1413 ok=1
+Cmd: preprocessCompute
+  insize=907 outsize=906 ok=1
+Cmd: compileComputeKernel
+  api=14 insize=906 outsize=1413 ok=1
+Cmd: translateComputeKernel
+  api=14 insize=1413 outsize=2356 ok=1
+Cmd: preprocessCompute
+  insize=1032 outsize=1031 ok=1
+Cmd: compileComputeKernel
+  error: 2 plat 14 at NewComputeShader.compute(26): 'hole2': missing initial value
+  error: 2 plat 14 at NewComputeShader.compute(26): undeclared identifier 'flaot3'
+  api=14 insize=1031 outsize=0 ok=0
+Cmd: preprocessCompute
+  insize=1032 outsize=1031 ok=1
+Cmd: preprocessCompute
+  insize=1030 outsize=1029 ok=1
+Cmd: compileComputeKernel
+  api=14 insize=1029 outsize=1617 ok=1
+Cmd: translateComputeKernel
+  api=14 insize=1617 outsize=2741 ok=1
+Cmd: preprocessCompute
+  insize=1031 outsize=1030 ok=1
+Cmd: compileComputeKernel
+  api=14 insize=1030 outsize=1617 ok=1
+Cmd: translateComputeKernel
+  api=14 insize=1617 outsize=2750 ok=1
+Cmd: preprocess
+  insize=1103 outsize=206 ok=1
+Cmd: preprocess
+  insize=1101 outsize=204 ok=1
+Cmd: compileSnippet
+  api=14 type=0 insize=1333 outsize=1356 kw= pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR ok=1
+Cmd: compileSnippet
+  api=14 type=1 insize=1333 outsize=565 kw= pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR ok=1
+Cmd: preprocessCompute
+  insize=1032 outsize=1031 ok=1
+Cmd: compileComputeKernel
+  api=14 insize=1031 outsize=1617 ok=1
+Cmd: translateComputeKernel
+  api=14 insize=1617 outsize=2750 ok=1
+Cmd: preprocessCompute
+  insize=1033 outsize=1032 ok=1
+Cmd: compileComputeKernel
+  api=14 insize=1032 outsize=1617 ok=1
+Cmd: preprocess
+  insize=1101 outsize=204 ok=1
+Cmd: compileSnippet
+  api=14 type=0 insize=1333 outsize=1356 kw= pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR ok=1
+Cmd: compileSnippet
+  api=14 type=1 insize=1333 outsize=565 kw= pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR ok=1
+Cmd: preprocess
+  insize=1101 outsize=204 ok=1
+Cmd: compileSnippet
+  api=14 type=0 insize=1333 outsize=1356 kw= pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR ok=1
+Cmd: compileSnippet
+  api=14 type=1 insize=1333 outsize=565 kw= pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR ok=1
+Cmd: preprocess
+  insize=1101 outsize=204 ok=1
+Cmd: compileSnippet
+  api=14 type=0 insize=1333 outsize=1356 kw= pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR ok=1
+Cmd: compileSnippet
+  api=14 type=1 insize=1333 outsize=565 kw= pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR ok=1
+Cmd: preprocess
+  insize=1101 outsize=204 ok=1
+Cmd: preprocessCompute
+  insize=1035 outsize=1034 ok=1
+Cmd: preprocessCompute
+  insize=1033 outsize=1032 ok=1
+Cmd: compileComputeKernel
+  api=14 insize=1032 outsize=1617 ok=1
+Cmd: preprocessCompute
+  insize=1033 outsize=1032 ok=1
+Cmd: preprocessCompute
+  insize=1033 outsize=1032 ok=1
+Cmd: compileComputeKernel
+  api=14 insize=1032 outsize=1617 ok=1
+Cmd: translateComputeKernel
+  api=14 insize=1617 outsize=2752 ok=1

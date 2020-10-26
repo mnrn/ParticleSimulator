@@ -166,7 +166,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shader: {fileID: 4800000, guid: d2b016030a5f64f5e874523d297889af, type: 3}
   cs: {fileID: 7200000, guid: 269e71ae4fbec40708c1d105515973ab, type: 3}
-  partNum: 8192
+  partNumX: 64
+  partNumY: 64
+  partNumZ: 64
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0

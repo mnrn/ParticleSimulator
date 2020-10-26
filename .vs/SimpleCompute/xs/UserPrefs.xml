@@ -1,9 +1,9 @@
 ﻿<Properties StartupConfiguration="{5ED2EBA4-9C78-FCBF-EB23-0BC7FE1811ED}|">
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/NewSurfaceShader.shader">
     <Files>
-      <File FileName="Assets/NewBehaviourScript.cs" Line="1" Column="1" />
-      <File FileName="Assets/NewComputeShader.compute" Line="1" Column="1" />
-      <File FileName="Assets/NewSurfaceShader.shader" Line="1" Column="1" />
+      <File FileName="Assets/NewBehaviourScript.cs" Line="51" Column="1" />
+      <File FileName="Assets/NewComputeShader.compute" Line="28" Column="24" />
+      <File FileName="Assets/NewSurfaceShader.shader" Line="6" Column="11" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -22,7 +22,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="1ee66a53-e70f-48c3-a154-0a2361b1b55f" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="95cdabe5-5c4f-4319-84dc-fdd290679db1" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
