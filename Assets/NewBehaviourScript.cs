@@ -28,8 +28,8 @@ public class NewBehaviourScript : MonoBehaviour
         mat = new Material(shader);
         partBuf = new ComputeBuffer(partNum, Marshal.SizeOf(typeof(Particle)));
         Particle[] ps = new Particle[partNum];
-        ps[0] = new Particle(new Vector3(0.0f, 0.0f, 0.0f));
-        ps[1] = new Particle(new Vector3(0.5f, 0.0f, 0.0f));
+        ps[0] = new Particle(new Vector3(0.0f, 0.0f, -0.5f));
+        ps[1] = new Particle(new Vector3(0.5f, -0.5f, 0.0f));
         partBuf.SetData(ps);
 
         kerIdx = cs.FindKernel("CSMain");

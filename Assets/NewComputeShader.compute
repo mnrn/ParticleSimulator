@@ -8,7 +8,7 @@ struct Particle
 
 RWStructuredBuffer<Particle> Particles;
 
-[numthreads(2,1,1)]
+[numthreads(64,1,1)]
 void CSMain (uint id : SV_DispatchThreadID)
 {
 

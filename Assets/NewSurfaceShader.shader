@@ -31,13 +31,14 @@
             {
                 v2f output;
                 output.pos = float4(particles[id].pos, 1.0);
+                output.pos = mul (UNITY_MATRIX_VP, output.pos);
                 output.sz = 10.0;
                 return output;
             }
 
             fixed4 frag(v2f input) : COLOR
             {
-                return float4(1.0, 1.0, 1.0, 1.0);
+                return float4(0.0, 1.0, 0.0, 1.0);
             }
 
             ENDCG
