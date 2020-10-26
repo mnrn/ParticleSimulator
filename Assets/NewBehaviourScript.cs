@@ -21,6 +21,7 @@ public class NewBehaviourScript : MonoBehaviour
     private Material mat = default;
     private ComputeBuffer partBuf;
     private int kerIdx;
+    private const int LOCAL_SZ_X = 256;
 
     // Start is called before the first frame update
     void Start()
@@ -42,7 +43,7 @@ public class NewBehaviourScript : MonoBehaviour
     void Update()
     {
         cs.SetBuffer(kerIdx, "Particles", partBuf);
-        cs.Dispatch(kerIdx, partNum, 1, 1);
+        cs.Dispatch(kerIdx, partNum / LOCAL_SZ_X, 1, 1);
     }
 
     private void OnRenderObject()
