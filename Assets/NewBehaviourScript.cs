@@ -17,7 +17,7 @@ public class NewBehaviourScript : MonoBehaviour
 {
     [SerializeField] private Shader shader = default;
     [SerializeField] private ComputeShader cs = default;
-    private int partNum = 2;
+    private int partNum = 100;
     private Material mat = default;
     private ComputeBuffer partBuf;
     private int kerIdx;
@@ -28,8 +28,10 @@ public class NewBehaviourScript : MonoBehaviour
         mat = new Material(shader);
         partBuf = new ComputeBuffer(partNum, Marshal.SizeOf(typeof(Particle)));
         Particle[] ps = new Particle[partNum];
-        ps[0] = new Particle(new Vector3(0.0f, 0.0f, -0.5f));
-        ps[1] = new Particle(new Vector3(0.5f, -0.5f, 0.0f));
+        for (int i = 0; i < partNum; i++)
+        {
+            ps[i] = new Particle(new Vector3(Random.Range(-10.0f, 10.0f), Random.Range(-10.0f, 10.0f), Random.Range(-10.0f, 10.0f)));
+        }
         partBuf.SetData(ps);
 
         kerIdx = cs.FindKernel("CSMain");
