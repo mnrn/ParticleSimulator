@@ -20,10 +20,12 @@ float3 force(float3 p, float3 q, float G)
 void CSMain (uint id : SV_DispatchThreadID)
 {
     const float maxDist = 45.0;
-    const float deltaT = 0.005;
+    const float deltaT = 0.001;
 
     const float3 hole1 = float3(7.5, 0.0, 0.0);
     const float3 hole2 = float3(-7.5, 0.0, 0.0);
+    //const float3 hole3 = float3(0.0, 0.0, 7.5);
+    //const float3 hole4 = float3(0.0, 0.0, -7.5);
 
     const float G = 1000.0;
     const float m = 2.0;
@@ -36,6 +38,9 @@ void CSMain (uint id : SV_DispatchThreadID)
     } else {
         const float3 f1 = force(hole1, p, G);
         const float3 f2 = force(hole2, p, G);
+        //const float3 f3 = force(hole3, p, G);
+        //const float3 f4 = force(hole4, p, G);
+        //const float3 f = f1 + f2 + f3 + f4;
         const float3 f = f1 + f2;
         const float3 a = f / m;
         ps[id].pos = p + v * deltaT + a * deltaT * deltaT;

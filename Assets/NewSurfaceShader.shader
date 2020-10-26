@@ -34,7 +34,7 @@
                 v2f output;
                 output.pos = float4(ps[id].pos, 1.0);
                 output.pos = mul (UNITY_MATRIX_VP, output.pos);
-                output.sz = 2.0;
+                output.sz = 2.718;
                 return output;
             }
 

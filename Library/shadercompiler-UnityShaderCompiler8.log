@@ -19,3 +19,6 @@ Cmd: compileComputeKernel
   api=14 insize=600 outsize=1161 ok=1
 Cmd: translateComputeKernel
   api=14 insize=1161 outsize=1870 ok=1
+Cmd: compileComputeKernel
+  error: 2 plat 14 at NewComputeShader.compute(44): redefinition of 'f'
+  api=14 insize=1265 outsize=0 ok=0
