@@ -4,7 +4,9 @@
 
 ## デモ
 
-![Demo](https://github.com/mnrn/ParticleSimulator/blob/main/Recordings/movie.gif)
+![Demo1](https://github.com/mnrn/ParticleSimulator/blob/main/Recordings/movie.gif)
+
+![Demo2](https://github.com/mnrn/ParticleSimulator/blob/main/Recordings/movie2.gif)
 
 ## 制作経緯
 
