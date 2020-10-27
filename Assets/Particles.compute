@@ -1,0 +1,50 @@
+﻿// Each #kernel tells which function to compile; you can have many kernels
+#pragma kernel CSMain
+
+struct Particle
+{
+    float3 pos;
+    float3 vel;
+};
+
+RWStructuredBuffer<Particle> ps;
+
+// 点pと点qの間に生じる重力を計算します。
+float3 force(float3 p, float3 q, float G)
+{
+    const float3 d = p - q;
+    const float r = length(d);
+    return (G / r) * normalize(d);
+}
+
+[numthreads(1024,1,1)]
+void CSMain (uint id : SV_DispatchThreadID)
+{
+    const float maxDist = 45.0;
+    const float deltaT = 0.004;
+
+    const float3 hole1 = float3(7.5, 0.0, 0.0);
+    const float3 hole2 = float3(-7.5, 0.0, 0.0);
+    //const float3 hole3 = float3(0.0, 0.0, 7.5);
+    //const float3 hole4 = float3(0.0, 0.0, -7.5);
+
+    const float G = 1000.0;
+    const float m = 2.0;
+
+    const float3 p = ps[id].pos;
+    const float3 v = ps[id].vel;
+
+    if (length(p) > maxDist) {
+        ps[id].pos = float3(0.0, 0.0, 0.0);
+    } else {
+        const float3 f1 = force(hole1, p, G);
+        const float3 f2 = force(hole2, p, G);
+        //const float3 f3 = force(hole3, p, G);
+        //const float3 f4 = force(hole4, p, G);
+        //const float3 f = f1 + f2 + f3 + f4;
+        const float3 f = f1 + f2;
+        const float3 a = f / m;
+        ps[id].pos = p + v * deltaT + a * deltaT * deltaT;
+        ps[id].vel = v + a * deltaT;
+    }
+}
