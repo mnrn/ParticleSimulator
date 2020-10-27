@@ -2,6 +2,10 @@
 
 コンピュートシェーダーを使ったパーティクルのシミュレーションを行います。
 
+## デモ
+
+![Demo](https://github.com/mnrn/ParticleSimulator/blob/main/Recordings/movie.gif)
+
 ## 制作経緯
 
 職務経歴書のスキル欄を見ただけでは本人の実力が伝わらないと思ったので実力がわかりやすいものを制作しました。  
