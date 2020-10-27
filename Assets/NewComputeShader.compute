@@ -21,7 +21,7 @@ float3 force(float3 p, float3 q, float G)
 void CSMain (uint id : SV_DispatchThreadID)
 {
     const float maxDist = 45.0;
-    const float deltaT = 0.001;
+    const float deltaT = 0.004;
 
     const float3 hole1 = float3(7.5, 0.0, 0.0);
     const float3 hole2 = float3(-7.5, 0.0, 0.0);
