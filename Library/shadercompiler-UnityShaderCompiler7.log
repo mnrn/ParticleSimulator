@@ -1,6 +1,0 @@
-Base path: '/Applications/Unity/Hub/Editor/2019.4.9f1/Unity.app/Contents', plugins path '/Applications/Unity/Hub/Editor/2019.4.9f1/PlaybackEngines'
-Cmd: initializeCompiler
-Cmd: compileComputeKernel
-  api=14 insize=1338 outsize=1617 ok=1
-Cmd: translateComputeKernel
-  api=14 insize=1617 outsize=2753 ok=1
